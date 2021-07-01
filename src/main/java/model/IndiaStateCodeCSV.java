@@ -1,13 +1,17 @@
 package model;
 
-import com.opencsv.bean.CsvBindByName;
-
 public class IndiaStateCodeCSV {
-
-    @CsvBindByName(column = "State Name", required = true)
-    public String stateName;
-
-    @CsvBindByName
-    public String stateCode;
+	int serialNumber;
+	String stateName;
+	int tin;
+	String stateCode;
+	
+	public IndiaStateCodeCSV(int serialNumber, String stateName, int tin, String stateCode) {
+		this.serialNumber = serialNumber;
+		this.stateName = stateName;
+		this.tin = tin;
+		this.stateCode = stateCode;
+	}
+	
     
 }
